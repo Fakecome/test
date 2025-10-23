@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Website Saya{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h2 class="logo">🌐 MySite</h2>
+            <ul>
+                <li><a href="/">Beranda</a></li>
+                <li><a href="/about">Tentang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Isi Halaman -->
+    <main class="container">
+        {% block content %}
+        <h1>Halaman Default</h1>
+        <p>Isi default dari base.html</p>
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        {% block footer %}
+        <p>&copy; 2024 Website Saya 💙</p>
+        {% endblock %}
+    </footer>
+
+</body>
+</html>

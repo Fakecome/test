@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Document</title>
+</head>
+<body>
+        {% extends "layout.html" %}
+
+        {% block content %}
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam 
+                unde cumque repellendus in sequi placeat veniam impedit ut deleniti
+                explicabo necessitatibus laudantium cupiditate corrupti quam odit,
+                omnis voluptatum nulla perspiciatis qui dignissimos suscipit laboriosam
+                quaerat perferendis officia. Doloremque, dolores earum?</p>
+            <button>Tekan saya</button>
+        {% endblock %}
+
+        {% block footer %}
+            <p>@HANDOYO</p>
+        {% endblock %}
+</body>
+</html>
